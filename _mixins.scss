@@ -1,0 +1,10 @@
+@mixin btn-reset {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin flex {
+  display: flex;
+}

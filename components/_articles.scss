@@ -1,0 +1,41 @@
+.articles {
+  &__item {
+  }
+
+  &__container {
+    padding: 53px 0;
+    grid-gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-auto-rows: minmax(274px, auto);
+  }
+}
+
+.article {
+  position: relative;
+  background-color: $color-dark;
+  min-height: 100px;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+
+  &--big {
+    grid-row-end: span 2;
+    grid-column-end: span 3;
+  }
+
+  &--height {
+    grid-row-end: span 2;
+    grid-column-end: span 1;
+  }
+
+  &--width {
+    grid-row-end: span 1;
+    grid-column-end: span 2;
+  }
+}
