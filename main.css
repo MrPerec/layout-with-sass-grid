@@ -199,6 +199,10 @@ img {
   background-color: #1d1f24;
   min-height: 100px;
 }
+.article__text {
+  position: relative;
+  z-index: 2;
+}
 .article__image {
   width: 100%;
   height: 100%;
@@ -208,10 +212,6 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.article--big {
-  grid-row-end: span 2;
-  grid-column-end: span 3;
-}
 .article--height {
   grid-row-end: span 2;
   grid-column-end: span 1;
@@ -219,4 +219,18 @@ img {
 .article--width {
   grid-row-end: span 1;
   grid-column-end: span 2;
+}
+
+.article-big {
+  grid-row-end: span 2;
+  grid-column-end: span 3;
+}
+.category {
+  color: #ff565c;
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  background-color: #ff565c;
 }/*# sourceMappingURL=main.css.map */
